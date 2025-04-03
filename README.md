@@ -7,7 +7,8 @@ Este projeto implementa algumas funcionalidades  no blog desenvolvindo pelo - [@
  #### Adicionei ao projeto maneiras de renderizar os conteúdos de forma mais dinâmica, sendo assim ficando mais amigável à manutenção. 
 
 <img src="assets/images/home-component-html.png">
- ### Carrossel de Notícias:
+
+### Carrossel de Notícias:
 Agora a home conta com um carrossel contém todas as notícias. 
 
 *Funcionamento* 🔽
