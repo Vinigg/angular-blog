@@ -1,27 +1,48 @@
-# AngularBlog
+# Blog Angular - Desafio Decola Tech 2025
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+Este projeto implementa algumas funcionalidades  no blog desenvolvindo pelo - [@Felipão da Dio](https://github.com/felipeAguiarCode/angular-blog).
 
-## Development server
+## Features Novas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ #### Adicionei ao projeto maneiras de renderizar os conteúdos de forma mais dinâmica, sendo assim ficando mais amigável à manutenção. 
 
-## Code scaffolding
+ ### Carrossel de Notícias:
+Agora a home conta com um carrossel contém todas as notícias. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+*Funcionamento* 🔽
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Tecnologias Utilizadas
+- Angular - Framework para construção da aplicação web.
+- TypeScript - Linguagem utilizada para maior robustez no desenvolvimento.
+- HTML & CSS - Estruturação e estilização do projeto.
+## 🔧 Como Executar o Projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 1. Clonar o Repositório
+```
+git clone https://github.com/Vinigg/angular-blog.git
+cd angular-blog
+```
 
-## Running end-to-end tests
+### 2. Instalar o Angular CLI e Dependências
+Caso ainda não tenha o Angular CLI instalado, execute:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+npm install -g @angular/cli
+```
+Agora, instale as dependências do projeto com o comando:
 
-## Further help
+```
+npm install 
+```
+### 3. Iniciar o Servidor Angular
+Para rodar o projeto, execute o seguinte comando:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+ng serve
+```
+
+Acesse o blog pelo navegador no endereço: `http://localhost:4200/`
+
+🚀 Este projeto foi criado como parte do Decola Tech Avanade 2025
