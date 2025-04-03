@@ -28,8 +28,39 @@
   margin-top: 20px;
 }
 
-/* Estilo para os botões de navegação */
-.swiper-button-next, .swiper-button-prev {
-  color: #000;
+/* Posicionamento das setas */
+.swiper-button-next,
+.swiper-button-prev {
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  width: 30px;
+  height: 200px;
+  background: rgba(245, 222, 179, 0.363);
+  border: none;
+  color: #ffffff; /* Cor das setas */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.swiper-button-next {
+  bottom: auto;
+  top: -75px;
+}
+
+.swiper-button-prev {
+  bottom: auto;
+  top: 520px;
+}
+
+/* Remove o padrão de ícone do Swiper */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+/* Estilo dos slides */
+.swiper-slide {
+  height: auto !important;
+  margin-bottom: 15px;
 }
 

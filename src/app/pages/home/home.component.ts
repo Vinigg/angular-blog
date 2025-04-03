@@ -8,6 +8,7 @@ import { Navigation, Pagination } from 'swiper/modules';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  articles = dataFake.filter(article => article.id !== '1'); // Remove o artigo principal
 
   constructor() { }
 
@@ -30,6 +31,8 @@ export class HomeComponent implements OnInit {
   }
   ngAfterViewInit() {
     new Swiper('.vertical-swiper', {
+      loop: true,
+      loopAdditionalSlides: 1,
       direction: 'vertical',
       slidesPerView: 'auto',
       spaceBetween: 30,
@@ -41,8 +44,8 @@ export class HomeComponent implements OnInit {
         clickable: true,
       },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-prev',
+        prevEl: '.swiper-button-next',
       },
     });
   }

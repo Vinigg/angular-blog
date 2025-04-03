@@ -9,42 +9,23 @@
   </div>
 
   <div class="articles__others">
+
     <div class="swiper vertical-swiper">
+      <div class="swiper-button-prev"></div>
+
       <div class="swiper-wrapper">
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
+        <div class="swiper-slide" *ngFor="let article of articles">
           <app-small-card
-            Id="2"
-            [cardTitle]="getTitle('2')"
-            [photoCover]="getPhotoCover('2')">
-          </app-small-card>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
-          <app-small-card
-            Id="3"
-            [cardTitle]="getTitle('3')"
-            [photoCover]="getPhotoCover('3')">
-          </app-small-card>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="swiper-slide">
-          <app-small-card
-            Id="4"
-            [cardTitle]="getTitle('4')"
-            [photoCover]="getPhotoCover('4')">
+            [Id]="article.id"
+            [cardTitle]="article.title"
+            [photoCover]="article.photoCover">
           </app-small-card>
         </div>
       </div>
 
-      <!-- Se quiser adicionar paginação -->
-      <div class="swiper-pagination"></div>
-
-      <!-- Se quiser adicionar botões de navegação -->
       <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
     </div>
+
+
   </div>
 </div>
