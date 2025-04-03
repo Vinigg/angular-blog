@@ -1,39 +1,50 @@
-<app-menu-title></app-menu-title>
-
 <div class="container__articles">
   <div class="articles__main">
-
     <app-big-card
       Id="1"
       [cardTitle]="getTitle('1')"
       [photoCover]="getPhotoCover('1')"
-      [cardDescription]="getDescription('1')"
-      >
+      [cardDescription]="getDescription('1')">
     </app-big-card>
-
   </div>
+
   <div class="articles__others">
-    <app-small-card
-      Id="2"
-      [cardTitle]="getTitle('2')"
-      [photoCover]="getPhotoCover('2')"
+    <div class="swiper vertical-swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <app-small-card
+            Id="2"
+            [cardTitle]="getTitle('2')"
+            [photoCover]="getPhotoCover('2')">
+          </app-small-card>
+        </div>
 
-    >
-    </app-small-card>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <app-small-card
+            Id="3"
+            [cardTitle]="getTitle('3')"
+            [photoCover]="getPhotoCover('3')">
+          </app-small-card>
+        </div>
 
-    <app-small-card
-      Id="3"
-      [cardTitle]="getTitle('3')"
-      [photoCover]="getPhotoCover('3')"
-    >
-    </app-small-card
-    >
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <app-small-card
+            Id="4"
+            [cardTitle]="getTitle('4')"
+            [photoCover]="getPhotoCover('4')">
+          </app-small-card>
+        </div>
+      </div>
 
-    <app-small-card
-      Id="4"
-      [cardTitle]="getTitle('4')"
-      [photoCover]="getPhotoCover('4')"
-    >
-    </app-small-card>
+      <!-- Se quiser adicionar paginação -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Se quiser adicionar botões de navegação -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
   </div>
 </div>
